@@ -14,6 +14,7 @@ public class Itemcollect : MonoBehaviour
     {
         Event.AddListener(GameObject.FindGameObjectWithTag("scorecounter").GetComponent<pickup>().score);
     }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player" && Input.GetKeyDown(KeyCode.E))
